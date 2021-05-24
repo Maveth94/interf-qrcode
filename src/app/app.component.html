@@ -36,7 +36,7 @@
         <!--
         <app-modifica (newEtic)="monum.etichet = $event" (newUrl)="monum.url = ($event)">
 -->
-        <app-modifica >
+        <app-modifica (emitEtic)="monum.etichet = $event", (emitUrl)="monum.url= $event">
 
         </app-modifica>
 

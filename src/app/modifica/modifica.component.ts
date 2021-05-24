@@ -13,7 +13,7 @@ export class ModificaComponent implements OnInit {
   //@Output() azzera = new EventEmitter<number>();
 
   modif(nEtic: string, nUrl: string) {
-    console.log(nEtic);
+    //console.log(nEtic);
     this.emitEtic.emit(nEtic);
     this.emitUrl.emit(nUrl);
     //console.log()
