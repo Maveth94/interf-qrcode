@@ -1,0 +1,11 @@
+p {
+  font-family: Lato;
+}
+
+table {
+border-collapse:collapse
+}
+td, th {
+border:1px solid #ddd;
+padding:8px;
+}

@@ -1,0 +1,47 @@
+<h1>QRCode Taranto</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>QRCode stampato</th>
+      <th>Pannello fisico e posizione</th>
+      <th>Etichetta e URL attuale</th>
+      <th>Nuova etichetta e nuova URL</th>
+    </tr>
+  </thead>
+  <tfoot>
+    <br />
+    <tr>
+      <button id="New">Aggiungi nuovo QRCode</button>
+    </tr>
+  </tfoot>
+  <tbody *ngFor="let monum of monumArr">
+    <tr>
+      <td>{{monum.qrc}}</td>
+      <td>
+        Nome: <br />
+        {{monum.nome}} <br />
+        <br />
+        Posizione: <br />{{monum.posiz}}
+      </td>
+      <td>
+        Etichetta: <br />
+        {{monum.etichet}} <br />
+        <br />
+        Url: <br />
+        {{monum.url}}
+      </td>
+      <td>
+        <p *ngIf="selezione == 0">
+          <button (click)="funSelez(1)" >Modifica</button>
+        </p>
+
+        <app-modifica [selezioneA]="selezione" (azzera)="funSelez($event)">
+          <!-- [monumSelez]="this.monum"  -->
+
+        </app-modifica>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
