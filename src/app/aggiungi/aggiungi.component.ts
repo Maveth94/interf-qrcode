@@ -29,20 +29,6 @@ export class AggiungiComponent implements OnInit {
     this.newMonumEvent.emit(this.newMon);
     this.azzera.emit(0);
 
-    //console.log(this.newMon);
-    /*
-    if (
-      this.newPost.titolo !== ('' || ' ') &&
-      this.newPost.mess !== ('' || ' ')
-    ) {
-      this.newPostEvent.emit(this.newPost);
-      
-      this.azzera.emit(0);
-    } else {
-      alert('Dati mancanti o  scorretti, ritenta');
-      return;
-    }
-    */
   }
 
   annulla() {
