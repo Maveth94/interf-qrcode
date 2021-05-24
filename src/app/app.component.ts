@@ -8,6 +8,15 @@ export class monum {
   qrc: boolean;
 
   /*
+  set setEtic(_etic: string) {
+    this.etichet = _etic;
+  }
+
+  set setUrl(_url: string) {
+    this.url = _url;
+  }
+
+  
   getNome (){
     return this.nome;
   }
@@ -54,6 +63,10 @@ export class AppComponent {
     url: 'www.codice2.taranto.it',
     qrc: true
   };
+
+  cambiaEtichet(_monum: monum, _newEtic:string){
+    _monum.etichet = _newEtic;
+  }
 
   monumArr: Array<monum> = [this.monum1, this.monum2];
 
