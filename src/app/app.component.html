@@ -12,7 +12,9 @@
   <tfoot>
     <br />
     <tr>
-      <button id="New">Aggiungi nuovo QRCode</button>
+      <button (click)="selezione=1" >Aggiungi nuovo QRCode</button>
+      <app-aggiungi [selezioneBut]="selezione">
+      </app-aggiungi>
     </tr>
   </tfoot>
   <tbody *ngFor="let monum of monumArr">
@@ -35,7 +37,6 @@
 
 
         <app-modifica (emitEtic)="monum.etichet = $event" (emitUrl)="monum.url= $event">
-
         </app-modifica>
 
       </td>

@@ -7,7 +7,7 @@ import { monum } from '../app.component';
   styleUrls: ['./modifica.component.css']
 })
 export class ModificaComponent implements OnInit {
-  @Input() selezioneA: number;
+  //@Input() selezioneA: number;
   @Output() emitEtic = new EventEmitter<string>();
   @Output() emitUrl = new EventEmitter<string>();
   //@Output() azzera = new EventEmitter<number>();
@@ -16,10 +16,9 @@ export class ModificaComponent implements OnInit {
     this.emitEtic.emit(nEtic);
   }
 
-  modifUrl( nUrl: string) {
+  modifUrl(nUrl: string) {
     this.emitUrl.emit(nUrl);
   }
-
 
   constructor() {}
 

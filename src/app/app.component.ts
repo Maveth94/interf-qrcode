@@ -46,7 +46,7 @@ export class monum {
 })
 export class AppComponent {
   //monumArr: Array<monum> = [];
-  //selezione: number = 0;
+  selezione: number = 0;
 
   monum1: monum = {
     nome: 'Tempio di Poseidone',
@@ -64,9 +64,11 @@ export class AppComponent {
     qrc: true
   };
 
-  cambiaEtichet(_monum: monum, _newEtic:string){
+  cambiaEtichet(_monum: monum, _newEtic: string) {
     _monum.etichet = _newEtic;
   }
+
+  newMonum(_newMon: monum) {}
 
   monumArr: Array<monum> = [this.monum1, this.monum2];
 
