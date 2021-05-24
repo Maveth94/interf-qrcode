@@ -6,28 +6,6 @@ export class monum {
   etichet: string;
   url: string;
   qrc: boolean;
-
-  /*
-  getNome (){
-    return this.nome;
-  }
-
-  getPosiz(){
-    return this.posiz;
-  }
-
-  getEtchet() {
-    return this.etichet;
-  }
-
-  getURL(){
-    return this.url;
-  }
-
-  getQrc(){
-    return this.qrc;
-  }
-  */
 }
 
 @Component({
@@ -57,7 +35,7 @@ export class AppComponent {
 
   monumArr: Array<monum> = [this.monum1, this.monum2];
 
-  funSelez(num: number) {
-    this.selezione = 1;
+  addMonum(_newMon: monum) {
+    this.monumArr.push(_newMon);
   }
 }
