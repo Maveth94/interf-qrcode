@@ -13,7 +13,7 @@
     <br />
     <tr>
       <button (click)="selezione=1" >Aggiungi nuovo QRCode</button>
-      <app-aggiungi [selezioneBut]="selezione">
+      <app-aggiungi [selezioneBut]="selezione" (newMonumEvent)="addMonum($event)" (azzera)="selezione = $event">
       </app-aggiungi>
     </tr>
   </tfoot>

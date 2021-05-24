@@ -8,6 +8,8 @@ import { monum } from '../app.component';
 })
 export class AggiungiComponent implements OnInit {
   @Input() selezioneBut: number;
+  @Output() newMonumEvent = new EventEmitter<monum>();
+  @Output() azzera = new EventEmitter<number>();
   newMon: monum;
 
   conferma(
@@ -23,7 +25,11 @@ export class AggiungiComponent implements OnInit {
     this.newMon.qrc = _nqrc;
     this.newMon.etichet = _nEtic;
     this.newMon.url = _nUrl;
-    console.log(this.newMon);
+
+    this.newMonumEvent.emit(this.newMon);
+    this.azzera.emit(0);
+
+    //console.log(this.newMon);
     /*
     if (
       this.newPost.titolo !== ('' || ' ') &&
@@ -37,6 +43,10 @@ export class AggiungiComponent implements OnInit {
       return;
     }
     */
+  }
+
+  annulla() {
+    this.azzera.emit(0);
   }
 
   constructor() {}

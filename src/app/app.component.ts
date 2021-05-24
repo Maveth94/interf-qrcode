@@ -68,7 +68,9 @@ export class AppComponent {
     _monum.etichet = _newEtic;
   }
 
-  newMonum(_newMon: monum) {}
+  addMonum(_newMon: monum) {
+    this.monumArr.push(_newMon);
+  }
 
   monumArr: Array<monum> = [this.monum1, this.monum2];
 
