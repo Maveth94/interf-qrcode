@@ -1,9 +1,12 @@
+Inserisci nuova etichetta:
 <input #newEtic/>
+<button (click) = "modifEtic(newEtic.value); newEtic.value=''; newUrl.value=''"> Salva </button>
+<button (click) = "newEtic.value=''"> Annulla </button>
+
 <br><br>
+Inserisci nuovo Url:
 <input #newUrl/>
+<button (click) = "modifUrl(newUrl.value); newUrl.value=''"> Salva </button>
+<button (click) = " newUrl.value=''"> Annulla </button>
 
 <br><br>
-
-
-<button (click) = "modif(newEtic.value,newUrl.value); newEtic.value=''; newUrl.value=''"> Salva </button>
-<button (click) = "newEtic.value=''; newUrl.value=''"> Annulla </button>

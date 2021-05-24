@@ -12,12 +12,14 @@ export class ModificaComponent implements OnInit {
   @Output() emitUrl = new EventEmitter<string>();
   //@Output() azzera = new EventEmitter<number>();
 
-  modif(nEtic: string, nUrl: string) {
-    //console.log(nEtic);
+  modifEtic(nEtic: string) {
     this.emitEtic.emit(nEtic);
-    this.emitUrl.emit(nUrl);
-    //console.log()
   }
+
+  modifUrl( nUrl: string) {
+    this.emitUrl.emit(nUrl);
+  }
+
 
   constructor() {}
 
