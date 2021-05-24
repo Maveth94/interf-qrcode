@@ -14,7 +14,7 @@ export class ModificaComponent implements OnInit {
 
   modif(nEtic: string, nUrl: string) {
     this.emitEtic.emit(nEtic);
-    console.log(this.emitEtic);
+    console.log(this.emitEtic.emit(nEtic));
     this.emitUrl.emit(nUrl);
     //console.log()
   }
