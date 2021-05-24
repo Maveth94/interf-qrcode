@@ -1,11 +1,9 @@
+<input #newEtic/>
+<br><br>
+<input #newUrl/>
 
-  <input #newEtic/>
-  <br><br>
-  <input #newUrl/>
-
-  <br><br>
+<br><br>
 
 
-  <button (click) = "modif(newEtic.value,newUrl.value); newEtic.value=''; newUrl.value=''"> Salva </button>
-  <button (click) = "annulla()"> Annulla </button>
-
+<button (click) = "modif(newEtic.value,newUrl.value); newEtic.value=''; newUrl.value=''"> Salva </button>
+<button (click) = "newEtic.value=''; newUrl.value=''"> Annulla </button>

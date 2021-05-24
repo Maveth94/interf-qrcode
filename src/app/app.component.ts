@@ -37,7 +37,7 @@ export class monum {
 })
 export class AppComponent {
   //monumArr: Array<monum> = [];
-  selezione: number = 0;
+  //selezione: number = 0;
 
   monum1: monum = {
     nome: 'Tempio di Poseidone',
@@ -57,7 +57,8 @@ export class AppComponent {
 
   monumArr: Array<monum> = [this.monum1, this.monum2];
 
+  /*
   funSelez(num: number) {
     this.selezione = 1;
-  }
+  }*/
 }

@@ -10,15 +10,11 @@ export class ModificaComponent implements OnInit {
   @Input() selezioneA: number;
   @Output() emitEtic = new EventEmitter<string>();
   @Output() emitUrl = new EventEmitter<string>();
-  @Output() azzera = new EventEmitter<number>();
+  //@Output() azzera = new EventEmitter<number>();
 
   modif(nEtic: string, nUrl: string) {
     this.emitEtic.emit(nEtic);
     this.emitUrl.emit(nUrl);
-  }
-
-  annulla() {
-    this.azzera.emit(0);
   }
 
   constructor() {}
