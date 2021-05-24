@@ -6,37 +6,6 @@ export class monum {
   etichet: string;
   url: string;
   qrc: boolean;
-
-  /*
-  set setEtic(_etic: string) {
-    this.etichet = _etic;
-  }
-
-  set setUrl(_url: string) {
-    this.url = _url;
-  }
-
-  
-  getNome (){
-    return this.nome;
-  }
-
-  getPosiz(){
-    return this.posiz;
-  }
-
-  getEtchet() {
-    return this.etichet;
-  }
-
-  getURL(){
-    return this.url;
-  }
-
-  getQrc(){
-    return this.qrc;
-  }
-  */
 }
 
 @Component({
@@ -64,18 +33,9 @@ export class AppComponent {
     qrc: true
   };
 
-  cambiaEtichet(_monum: monum, _newEtic: string) {
-    _monum.etichet = _newEtic;
-  }
+  monumArr: Array<monum> = [this.monum1, this.monum2];
 
   addMonum(_newMon: monum) {
     this.monumArr.push(_newMon);
   }
-
-  monumArr: Array<monum> = [this.monum1, this.monum2];
-
-  /*
-  funSelez(num: number) {
-    this.selezione = 1;
-  }*/
 }

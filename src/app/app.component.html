@@ -1,5 +1,20 @@
 <h1>QRCode Taranto</h1>
 
+<!--
+Progetto iniziale: 
+si è strutturata l'interfaccia in tal modo: 
+tutto avviene all'interno della tabella che ho strutturato sulla base di quella fornita. 
+Ogni riga si riferisce ad un oggetto tipo "monum" descritto nel ts; tale oggetto è definito da: il nome del monumento, la posizione, il codice qr (non ancora implementato, impostato come boolean per fare prove), un'etichetta ed un'url. 
+Gli oggetti in questo modo definiti vengono pushati all'interno dell'array monumArr; per ora ci sono solo 2 oggetti "dummy", una volta implementata la funzione si dovrebbero prendere i dati dal server e metterli nell'array. 
+Nell'html si esegue un *ngFor su questo array, in questo modo vengono visualizzati i dati di ciascun oggetto (monumento). 
+Oltre al componente principale ci sono altre due sottocomponenti, una per la modifica dinamica delle etichette e delle url (app-modifica):
+Quando si preme salva, attraverso deglie emitter, si prende la stringa inserita nel riquadro e la si associa alla rispettiva variabile originaria dell'oggetto di tipo monumento. 
+L'altra sotto-componente permette di aggiungere un nuovo monumento: cliccando il pulsante compare un riquadro in cui è possibile inserire i dati del nuovo monumento da inserire; poi, premendo il relativo pulsante conferma, un emitter invierà questi dati (oggetto tipo monumento) al main che, a sua volta, li inserirà nell'array consentendone la visualizzazione. 
+
+ 
+
+-->
+
 <table>
   <thead>
     <tr>
@@ -13,8 +28,7 @@
     <br />
     <tr>
       <button (click)="selezione=1" >Aggiungi nuovo QRCode</button>
-      <app-aggiungi [selezioneBut]="selezione" (newMonumEvent)="addMonum($event)" (azzera)="selezione = $event">
-      </app-aggiungi>
+
     </tr>
   </tfoot>
   <tbody *ngFor="let monum of monumArr">
@@ -43,3 +57,6 @@
     </tr>
   </tbody>
 </table>
+<hr>
+<app-aggiungi [selezioneBut]="selezione" (newMonumEvent)="addMonum($event)" (azzera)="selezione = $event">
+</app-aggiungi>
