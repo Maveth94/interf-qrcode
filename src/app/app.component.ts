@@ -5,7 +5,7 @@ export class monum {
   posiz: string;
   etichet: string;
   url: string;
-  qrc: boolean;
+  qrc: HTMLImageElement;
 }
 
 @Component({
@@ -17,7 +17,7 @@ export class AppComponent {
   //monumArr: Array<monum> = [];
   selezione: number = 0;
 
-  console.log(asd);
+  //console.log(asd);
 
   monum1: monum = {
     nome: 'Tempio di Poseidone',
@@ -34,8 +34,6 @@ export class AppComponent {
     url: 'www.codice2.taranto.it',
     qrc: true
   };
-
-
 
   monumArr: Array<monum> = [this.monum1, this.monum2];
 
