@@ -4,7 +4,7 @@
 Progetto iniziale: 
 si è strutturata l'interfaccia in tal modo: 
 tutto avviene all'interno della tabella che ho strutturato sulla base di quella fornita. 
-Ogni riga si riferisce ad un oggetto tipo "monum" descritto nel ts; tale oggetto è definito da: il nome del monumento, la posizione, il codice qr (non ancora implementato, impostato come boolean per fare prove), un'etichetta ed un'url. 
+Ogni riga si riferisce ad un oggetto tipo "monum" descritto nel ts; tale oggetto è definito da: il nome del monumento, la posizione, il codice qr, un'etichetta ed un'url. 
 Gli oggetti in questo modo definiti vengono pushati all'interno dell'array monumArr; per ora ci sono solo 2 oggetti "dummy", una volta implementata la funzione si dovrebbero prendere i dati dal server e metterli nell'array. 
 Nell'html si esegue un *ngFor su questo array, in questo modo vengono visualizzati i dati di ciascun oggetto (monumento). 
 Oltre al componente principale ci sono altre due sottocomponenti, una per la modifica dinamica delle etichette e delle url (app-modifica):

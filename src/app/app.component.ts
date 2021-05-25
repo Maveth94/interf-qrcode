@@ -1,29 +1,27 @@
 import { Component, VERSION } from '@angular/core';
 
+/**
+ * creo un oggetto di tipo monum che contenga le informazioni necessarie
+ */
 export class monum {
   nome: string;
   posiz: string;
   etichet: string;
   url: string;
   qrc: string;
-  /*
-  setQrc(_qrc:string){
-    this.qrc = new Image();
-    return this.qrc.src = _qrc;
-  }*/
 }
 
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'] 
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   //monumArr: Array<monum> = [];
   selezione: number = 0;
 
   //console.log(asd);
-
+  //creo due dummy per lavorare
   monum1: monum = {
     nome: 'Tempio di Poseidone',
     posiz: 'Piazza Castello 74123 Taranto TA 40.473621, 17.233016',
@@ -42,8 +40,10 @@ export class AppComponent {
       'https://stackblitz.com/files/interf-qrcode/github/Maveth94/interf-qrcode/Save6/src/app/download.png'
   };
 
+  //inserisco i dummy nell'array
   monumArr: Array<monum> = [this.monum1, this.monum2];
 
+  //funzione per aggiungere dinamicamente oggetti all'array, comunica con componente aggiungi
   addMonum(_newMon: monum) {
     this.monumArr.push(_newMon);
   }
