@@ -1,16 +1,14 @@
 Inserisci nuova etichetta:<br>
 
 <textarea #newEtic> </textarea>
-<!--
-<input #newEtic/>
---><br>
+<br>
 
 <button (click) = "modifEtic(newEtic.value); newEtic.value=''; newUrl.value=''"> Salva </button>
 <button (click) = "newEtic.value=''"> Annulla </button>
 
 <br><br>
 Inserisci nuovo Url:<br>
-<input #newUrl/><br>
+<textarea #newEtic #newUrl> </textarea>
 <button (click) = "modifUrl(newUrl.value); newUrl.value=''"> Salva </button>
 <button (click) = " newUrl.value=''"> Annulla </button>
 
