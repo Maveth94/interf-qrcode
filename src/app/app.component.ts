@@ -5,7 +5,12 @@ export class monum {
   posiz: string;
   etichet: string;
   url: string;
-  qrc: HTMLImageElement;
+  qrc: string;
+  /*
+  setQrc(_qrc:string){
+    this.qrc = new Image();
+    return this.qrc.src = _qrc;
+  }*/
 }
 
 @Component({
@@ -24,7 +29,8 @@ export class AppComponent {
     posiz: 'Piazza Castello 74123 Taranto TA 40.473621, 17.233016',
     etichet: 'Past And Present tempio di Poseidone',
     url: 'www.codiceurl.taranto.it',
-    qrc: true
+    qrc:
+      '"https://stackblitz.com/files/interf-qrcode/github/Maveth94/interf-qrcode/Save6/src/app/download.png"'
   };
 
   monum2: monum = {
@@ -32,7 +38,8 @@ export class AppComponent {
     posiz: 'Piazza C 74123 Taranto TA 40.473621, 17.233016',
     etichet: 'Virtual tour del castello',
     url: 'www.codice2.taranto.it',
-    qrc: true
+    qrc:
+      'https://stackblitz.com/files/interf-qrcode/github/Maveth94/interf-qrcode/Save6/src/app/download.png'
   };
 
   monumArr: Array<monum> = [this.monum1, this.monum2];

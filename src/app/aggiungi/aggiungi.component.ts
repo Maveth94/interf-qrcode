@@ -15,14 +15,14 @@ export class AggiungiComponent implements OnInit {
   conferma(
     _nNome: string,
     _nPos: string,
-    _nqrc: boolean,
+    _nqrc:string,
     _nEtic: string,
     _nUrl: string
   ) {
     this.newMon = new monum();
     this.newMon.nome = _nNome;
     this.newMon.posiz = _nPos;
-    this.newMon.qrc = _nqrc;
+    //this.newMon.qrc = _nqrc;
     this.newMon.etichet = _nEtic;
     this.newMon.url = _nUrl;
 
