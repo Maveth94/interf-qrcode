@@ -30,7 +30,7 @@ L'altra sotto-componente permette di aggiungere un nuovo monumento: cliccando il
   </tfoot>
   <tbody *ngFor="let monum of monumArr">
     <tr>
-      <td><img src="img/download.png" /></td>
+      <td><img src="img/download.png"></td>
       <td>
         Nome: <br />
         {{monum.nome}} <br />
@@ -45,19 +45,12 @@ L'altra sotto-componente permette di aggiungere un nuovo monumento: cliccando il
         {{monum.url}}
       </td>
       <td>
-        <app-modifica
-          (emitEtic)="monum.etichet = $event"
-          (emitUrl)="monum.url= $event"
-        >
+        <app-modifica (emitEtic)="monum.etichet = $event" (emitUrl)="monum.url= $event">
         </app-modifica>
       </td>
     </tr>
   </tbody>
 </table>
 <hr />
-<app-aggiungi
-  [selezioneBut]="selezione"
-  (newMonumEvent)="addMonum($event)"
-  (azzera)="selezione = $event"
->
+<app-aggiungi [selezioneBut]="selezione" (newMonumEvent)="addMonum($event)" (azzera)="selezione = $event">
 </app-aggiungi>
