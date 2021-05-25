@@ -1,5 +1,10 @@
 Inserisci nuova etichetta:<br>
-<input #newEtic/><br>
+
+<textarea #newEtic> </textarea>
+<!--
+<input #newEtic/>
+--><br>
+
 <button (click) = "modifEtic(newEtic.value); newEtic.value=''; newUrl.value=''"> Salva </button>
 <button (click) = "newEtic.value=''"> Annulla </button>
 
