@@ -17,6 +17,8 @@ export class AppComponent {
   //monumArr: Array<monum> = [];
   selezione: number = 0;
 
+  console.log(asd);
+
   monum1: monum = {
     nome: 'Tempio di Poseidone',
     posiz: 'Piazza Castello 74123 Taranto TA 40.473621, 17.233016',
@@ -32,6 +34,8 @@ export class AppComponent {
     url: 'www.codice2.taranto.it',
     qrc: true
   };
+
+
 
   monumArr: Array<monum> = [this.monum1, this.monum2];
 
