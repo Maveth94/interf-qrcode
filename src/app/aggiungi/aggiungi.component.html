@@ -1,0 +1,24 @@
+<p *ngIf="selezioneBut == 1">
+  Inserire nome del monumento: <br>
+  <textarea #nNome> </textarea> <br><br>
+  Inserire posizione del monumento: <br>
+  <textarea #nPos> </textarea>
+  <br><br>
+  Inserire QRCode: <br>
+  <textarea #nqrc> </textarea>
+  <br><br>
+  Inserire Etichetta: <br>
+  <textarea #nEtic> </textarea>
+  <br><br>
+   Inserire Url: <br>
+  <textarea #nUrl> </textarea>
+  <br><br>
+
+  Premere conferma per memorizzare  il monumento
+  <br><br>
+
+  <button (click) = "conferma(nNome.value, nPos.value, nqrc.value, nEtic.value, nUrl.value)" >conferma</button>
+  <br><br>
+  <button (click) = "annulla()" >annulla</button>
+
+</p>
