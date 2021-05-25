@@ -1,12 +1,15 @@
-<p *ngIf="selezioneA == 1">
-  <input #newEtic/>
-  <br><br>
-  <input #newUrl/>
+Inserisci nuova etichetta:<br>
 
-  <br><br>
+<textarea #newEtic> </textarea>
+<br>
 
+<button (click) = "modifEtic(newEtic.value); newEtic.value=''; newUrl.value=''"> Salva </button>
+<button (click) = "newEtic.value=''"> Annulla </button>
 
-  <button (click) = "modif(newEtic.value,newUrl.value); newEtic.value=''; newUrl.value=''"> Salva </button>
-  <button (click) = "annulla()"> Annulla </button>
+<br><br>
+Inserisci nuovo Url:<br>
+<textarea #newEtic #newUrl> </textarea><br>
+<button (click) = "modifUrl(newUrl.value); newUrl.value=''"> Salva </button>
+<button (click) = " newUrl.value=''"> Annulla </button>
 
-</p>
+<br><br>
