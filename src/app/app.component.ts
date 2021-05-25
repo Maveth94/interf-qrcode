@@ -30,7 +30,7 @@ export class AppComponent {
     etichet: 'Past And Present tempio di Poseidone',
     url: 'www.codiceurl.taranto.it',
     qrc:
-      '"https://stackblitz.com/files/interf-qrcode/github/Maveth94/interf-qrcode/Save6/src/app/download.png"'
+      'https://stackblitz.com/files/interf-qrcode/github/Maveth94/interf-qrcode/Save6/src/app/img/download%20(1).png'
   };
 
   monum2: monum = {
