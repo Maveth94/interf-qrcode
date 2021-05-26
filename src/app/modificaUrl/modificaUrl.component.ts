@@ -2,11 +2,11 @@ import { Component, Input, OnInit, EventEmitter, Output } from '@angular/core';
 import { monum } from '../app.component';
 
 @Component({
-  selector: 'app-modifica',
-  templateUrl: './modifica.component.html',
-  styleUrls: ['./modifica.component.css']
+  selector: 'app-modificaUrl',
+  templateUrl: './modificaUrl.component.html',
+  styleUrls: ['./modificaUrl.component.css']
 })
-export class ModificaComponent implements OnInit {
+export class ModificaUrlComponent implements OnInit {
   //@Input() selezioneA: number;
   @Output() emitEtic = new EventEmitter<string>();
   @Output() emitUrl = new EventEmitter<string>();
