@@ -28,7 +28,7 @@ export class AppComponent {
     etichet: 'Past And Present tempio di Poseidone',
     url: 'www.codiceurl.taranto.it',
     qrc:
-      'https://stackblitz.com/files/interf-qrcode/github/Maveth94/interf-qrcode/Save6/src/app/img/download%20(1).png'
+      'https://stackblitz.com/files/interf-qrcode/github/Maveth94/interf-qrcode/save8/src/app/img/downloadQrCode.png'
   };
 
   monum2: monum = {
@@ -37,7 +37,7 @@ export class AppComponent {
     etichet: 'Virtual tour del castello',
     url: 'www.codice2.taranto.it',
     qrc:
-      'https://stackblitz.com/files/interf-qrcode/github/Maveth94/interf-qrcode/Save6/src/app/download.png'
+      'https://stackblitz.com/files/interf-qrcode/github/Maveth94/interf-qrcode/save8/src/app/img/downloadQrCode.png'
   };
 
   //inserisco i dummy nell'array
